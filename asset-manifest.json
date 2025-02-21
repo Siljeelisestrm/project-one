@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "https:///siljeelisestrm.github.io/project-one/static/css/main.0696a987.css",
+    "main.js": "https:///siljeelisestrm.github.io/project-one/static/js/main.394dc4c0.js",
+    "index.html": "https:///siljeelisestrm.github.io/project-one/index.html",
+    "main.0696a987.css.map": "https:///siljeelisestrm.github.io/project-one/static/css/main.0696a987.css.map",
+    "main.394dc4c0.js.map": "https:///siljeelisestrm.github.io/project-one/static/js/main.394dc4c0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0696a987.css",
+    "static/js/main.394dc4c0.js"
+  ]
+}
