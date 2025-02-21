@@ -7,7 +7,7 @@ import { useState } from "react";
 
 function App() {
   const [items, setItems] = useState(
-    JSON.parse(localStorage.getItem("shoppingList"))
+    JSON.parse(localStorage.getItem("shoppingList") || [])
   );
   const [newItem, setNewItem] = useState("");
   const [search, setSearch] = useState("");
@@ -51,7 +51,7 @@ function App() {
       />
       <SearchItem search={search} setSearch={setSearch} />
       <Content
-        items={items.filter((item) =>
+        items={(items || []).filter((item) =>
           item.item.toLowerCase().includes(search.toLowerCase())
         )}
         handleCheck={handleCheck}
