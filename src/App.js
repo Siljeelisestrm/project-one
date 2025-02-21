@@ -30,7 +30,7 @@ function App() {
     setAndSaveItems(listItems);
   };
   const handleDelete = (id) => {
-    const listItems = items.filter((item) => item.id !== id);
+    const listItems = items((item) => item.id !== id);
     setAndSaveItems(listItems);
   };
 
@@ -51,9 +51,7 @@ function App() {
       />
       <SearchItem search={search} setSearch={setSearch} />
       <Content
-        items={items.filter((item) =>
-          item.item.toLowerCase().includes(search.toLowerCase())
-        )}
+        items={items}
         handleCheck={handleCheck}
         handleDelete={handleDelete}
       />
