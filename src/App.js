@@ -40,6 +40,7 @@ function App() {
     addItem(newItem);
     setNewItem("");
   };
+  console.log(items);
 
   return (
     <div className="App">
