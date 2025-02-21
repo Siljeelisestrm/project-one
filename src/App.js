@@ -40,6 +40,7 @@ function App() {
     addItem(newItem);
     setNewItem("");
   };
+  console.log("heihei test");
 
   return (
     <div className="App">
